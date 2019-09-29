@@ -1,81 +1,75 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+
+<html>
 	<head>
-		<meta charset="UTF-8">
-		<title>Whicorn</title>
-		<link href="style.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name = "viewport" content = "user-scalable=no, width=device-width">
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<link href="css/style.css" rel="stylesheet" type="text/css" />
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		<title>Личная страница Полины Гуляевой</title>
+	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<meta name="description" content="Личная страница и контакты">
+		<!-- Bootstrap Core CSS -->
+    	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	</head>
 	<body>
-		<div class="main">
-			<div class="topline"></div>
-			<div class="menu">
-				<div class="logo">
-					<img src="logo1.jpg" alt="">
-				</div>
-				<div class="menu1">
-					<div class="menuitem1">
-						<a class="menulink active" href="">Мои социальные сети</a>
-					</div>
-					<div class="menuitem2">
-						<a class="menulink" href="https://vk.com/id439309405">VK</a>
-					</div>
-				</div>
-				<script language="JavaScript" type="text/javascript">
-				function highlight(){
-				  var tags=document.getElementsByTagName("a");
-				  for(i in tags){
-					if(tags[i].className=="menulink"){
-						if(document.location.href==tags[i].href){
-							tags[i].className +=" active";
-						}
-					}
-				  }
-				  console.log(document.location.href);
-				  console.log(tags[i].firstChild.id);
-				}
-				</script>
-				<script language="JavaScript" type="text/javascript">highlight()</script>
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right">  
+					</ul>
+				</nav> 
 			</div>
-			<div class="header">
-				<div style="clear:both"></div>
-				<div class="text">
-					<div class="grt">Полина</div>
-					<div class="blt">Гуляева</div>
-				</div>
-				<div class="circles">
-					<div class="circbl">
-						<div id="circ" class="circ1">
-							<div class="ct1">Группа</div>
-							<div class="ct2">БКЛ-192<br/> </div>
-						</div>
-						<div id="circ" class="circ2">
-							<div class="ct1">День рождения</div>
-							<div class="ct2">20.03.2001<br/> </div>
-						</div>
-						<div id="circ" class="circ3">
-							<div class="ct1">Родной город</div>
-							<div class="ct2">Новосибирск<br/> </div>
-						</div>
+		</nav>
+		<header style="background-color:plum; padding-top:70px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+						<br/><br/>
+						<h1>Полина Гуляева</h1>
+						<hr>
+						<p><i>Человек, умеющий <b>делать</i> HTML</b></p> 
+	                </div>
+					<div class="col-md-4">
+        	            <img src="pics/pic1.jpg"> 
 					</div>
+	            </div>
+			</div>
+		</header>
+		<section id="portfolio">
+			<div class="container">
+				<div class="col-md-3">
+					<article>
+						<h3>Место учебы</h2>
+						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
+					</article>
+					<article>
+						<h3>Родной город</h2>
+						<p>Новосибирск</p>
+					</article>
+					<article>
+						<h3>Школа</h2>
+						<p>99</p>
+					</article>
 				</div>
-				<div class="slider">
-							<div class="photo"><img src="pics/pic1.jpg" /></div> 
-					</div>
+				<div class="col-md-6">
+					<article>
+						<h3>Немного обо мне</h2>
+						<p>Я люблю кататься на бегемотах</p>
+					</article>
+				</div>
+				<div class="col-md-3">
+					<h3>Я в соцсетях</h3>
+					<ul>
+						<li><a href="https://vk.com/id439309405">VK</a></li>
+					</ul>
 				</div>
 			</div>
-			<div class="description">
-				<div class="desc1">
-					<div class="headline">Немного обо мне</div>
-					<div class="textul">Я люблю кататься на бегемоте</div>
+		</section>
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; П. Гуляева, 2018</p> 
 			</div>
-			<div class="footer"></div>
-		</div>
+		</footer>
 	</body>
 </html>
